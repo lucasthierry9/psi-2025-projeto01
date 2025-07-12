@@ -1,2 +1,29 @@
 {% extends "website/base.html" %}
+{% load static %}
 {% block title %}Elenco{% endblock %}
+{% block content %}
+<section class="container py-5">
+    <div>
+        <h1 style="font-family: Inter; font-weight: 700">ELENCO</h1>
+    </div>
+
+    <div>
+        <div style="display: grid; grid-template-columns: repeat(3, 261px); gap: 25px">
+            {% for jogador in elenco_vasco %}
+            <div style="width: 261px; height: 300px; background-color: gray; border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="width: 261px; height: 300px; color: white; position: absolute; margin: 0; white-space: nowrap; display: flex; padding: 15px">
+                        <h1 style="margin: 0; font-family: Inter; font-weight: 700; text-align: left; bottom: 20px;">{{ jogador.numero }}</h1>
+                        <h3 style="margin: 0; font-family: Inter; font-weight: 700; text-align: left; left: 20px;">{{ jogador.nome }}</h3>
+                    </div>
+                    <img src="{% static jogador.imagem %}" alt="{{ jogador.nome }}" style="width: 261px; height: 300px;">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+
+</section>
+{% endblock content %}

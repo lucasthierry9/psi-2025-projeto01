@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'website/img/favicon-32x32.png' %}" type="image/x-icon">
     <title>{% block title %}{% endblock title %} - Site Vasco</title>
     <link href="{% static 'website/css/styles.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,14 +13,14 @@
 </head>
 <body style="background-color:rgb(241, 241, 241);">
     <header>
-        <div style="display: flex; width: 100%; height: 100px; padding-left: 50px; padding-right: 50px; padding-top: 15px; padding-bottom: 15px; background-color: black; color: white; text-align: center; align-items: center;">
-                <img src="{% static 'website/img/CRVascodaGama.png' %}" alt="Logo Vasco" style="display: inline-block; width: 50px; margin: 0px;">
-                <p style="margin: auto; font-family: Inter; font-weight: 700; text-align: center; font-size: 50px; display: inline-block;">VASCO DA GAMA</p>
+        <div style="display: flex; width: 100%; height: 100px; padding: 15px; background-color: black; color: white; text-align: center; align-items: center; justify-content: center; margin: auto;">
+            <p style="font-family: Inter; font-weight: 700; text-align: center; font-size: 60px; display: inline-block; margin: 0; white-space: nowrap;">VASCO DA GAMA</p>    
+            <img src="{% static 'website/img/CRVascodaGama.png' %}" alt="Logo Vasco" style="position: absolute; left: 25px; display: inline-block; width: 50px;">
         </div>
-        <div style="width: 100%; height: 45px; background-color: gray; text-align: center; color: white; margin: auto; padding: 5px; font-size: 20px; display: flex">
-            <a href="{% url 'inicio' %}" style="margin-right: 10px; margin-left: 10px; font-family: Inter; color: black; font-weight: 500; display: inline-block; border: none;">INÍCIO</a>
-            <a href="{% url 'elenco' %}" style="margin-right: 10px; margin-left: 10px; font-family: Inter; color: black; font-weight: 500; display: inline-block;">ELENCO</a>
-            <a href="{% url 'sobre' %}" style="margin-right: 10px; margin-left: 10px; font-family: Inter; color: black; font-weight: 500; display: inline-block;">SOBRE</a>
+        <div style="width: 100%; height: 45px; background-color: gray; text-align: center; color: white; margin: auto; padding: 5px; font-size: 25px; display: flex; align-items: center; justify-content: center; gap: 25px;">
+            <a href="{% url 'inicio' %}" style="text-decoration: none; font-family: Inter; color: black; font-weight: 600; display: inline-block;">INÍCIO</a>
+            <a href="{% url 'elenco' %}" style="text-decoration: none; font-family: Inter; color: black; font-weight: 600; display: inline-block;">ELENCO</a>
+            <a href="{% url 'sobre' %}" style="text-decoration: none; font-family: Inter; color: black; font-weight: 600; display: inline-block;">SOBRE</a>
         </div>
     </header>
 
@@ -27,11 +28,11 @@
     <main>
         <p>Conteúdo</p>
     </main>
-    {% endblock %}
+    {% endblock content %}
 
     <footer>
-        <div style="width: 100%; height: 50px; background-color: black; color: white; text-align: center; padding: 20px; display: flex;">
-            <p>&copy; Vasco da Gama 2025 - Todos os direitos reservados.</p>
+        <div style="width: 100%; height: 50px; background-color: black; color: white; display: flex; align-items: center; justify-content: center;">
+            <p style="margin: 0; font-family: Inter;">&copy; Vasco da Gama 2025 - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
