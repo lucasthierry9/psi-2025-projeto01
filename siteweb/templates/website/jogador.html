@@ -1,2 +1,16 @@
 {% extends "website/base.html" %}
-{% block title %}jogador.id{% endblock %}
+{% load static %}
+{% block title %}{{ nome }}{% endblock %}]
+{% block content %}
+<section class="container py-5">
+    <div style="display: flex;">
+        <div style="display: inline-block; width: 261px; height: 300px; background-color: gray; border-radius: 10px; position: relative; overflow: hidden; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);">
+            <img src="{% static imagem %}" alt="{{ nome }}" style="width: 100%; height: 100%;">
+        </div>
+        <div style="display: inline-block; color: black; margin-left: 30px;">
+            <h2 style="font-family: Inter; font-weight: 700">{{ nome }}</h2>
+            <p style="margin: 0"><strong>Idade:</strong> {{ idade }}</p>
+            <p style="margin: 0"><strong>Posição:</strong> {{ posicao }}</p>
+            <p style="margin: 0"><strong>Local de nascimento:</strong> {{ localnascimento }}</p>
+</section>
+{% endblock content %}

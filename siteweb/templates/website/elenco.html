@@ -2,31 +2,30 @@
 {% load static %}
 {% block title %}Elenco{% endblock %}
 {% block content %}
-<section class="container py-5">
-    <div>
-        <h1 style="font-family: Inter; font-weight: 700">ELENCO</h1>
-    </div>
-
-    <div>
-        <div style="display: grid; grid-template-columns: repeat(3, 261px); gap: 25px">
-            {% for jogador in elenco_vasco %}
-            <div style="width: 261px; height: 300px; background-color: gray; border-radius: 15px; position: relative; overflow: hidden;">
-                    <div style="width: 261px; height: 300px; color: white; position: absolute; margin: 0; white-space: nowrap; display: flex; padding: 15px">
-                        <h1 style="margin: 0; font-family: Inter; font-weight: 700; text-align: left; bottom: 20px;">{{ jogador.numero }}</h1>
-                        <div style="padding: 0px; margin: 0px; display: inline-block;">
-                            <p style="margin: 0px; font-family: Inter; font-weight: 700; text-align: left; left: 20px;">{{ jogador.nome }}</p>
-                            <p style="margin: 0px; font-family: Inter; font-weight: 700; text-align: left; left: 20px;">{{ jogador.posicao}}</p>
-                        </div>
-                    </div>
-                    <img src="{% static jogador.imagem %}" alt="{{ jogador.nome }}" style="width: 100%; height: 100%;">
-            </div>
-            {% endfor %}
+    <section class="container py-5">
+        <div>
+            <h1 style="font-family: Inter; font-weight: 700; color: black;">ELENCO</h1>
         </div>
-    </div>
 
-
-
-
-
-</section>
+        <div>
+            <div style="display: grid; grid-template-columns: repeat(4, 261px); gap: 25px">
+                {% for jogador in elenco_vasco %}
+                <a href="{% url 'jogador' jogador.id %}" style="text-decoration: none; display: block; width: 261px; height: 300px;">
+                    <div style="width: 261px; height: 300px; background-color: gray; border-radius: 10px; position: relative; overflow: hidden; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));"></div>
+                
+                        <div style="color: white; position: absolute; margin: 0; white-space: nowrap; display: flex; align-items: center; padding: 15px; bottom: 0px;">
+                            <h1 style="margin: 0; font-family: Inter; font-weight: 700; text-align: left; bottom: 20px; margin-right: 15px;">{{ jogador.numero }}</h1>
+                            <div style="padding: 0px; margin: 0px; display: flex; flex-direction: column;">
+                                <p style="margin: 0; font-family: Inter; font-weight: 700; text-align: left;">{{ jogador.nome }}</p>
+                                <p style="margin: 0; font-family: Inter; font-weight: 700; text-align: left;">{{ jogador.posicao}}</p>
+                            </div>
+                        </div>
+                        <img src="{% static jogador.imagem %}" alt="{{ jogador.nome }}" style="width: 100%; height: 100%;">
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 {% endblock content %}
