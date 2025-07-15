@@ -1,3 +1,25 @@
 {% extends "website/base.html" %}
 {% block title %}Início{% endblock %}
+{% load static %}
+{% block content %}
+    <section class="container py-5">
+        {% for noticia in noticias_vasco %}
+        <div style="margin: 0;">
+            <a href="{% url 'noticia' noticia.id %}" style="text-decoration: none; display: block; height: 400px; width: 100%;">
+                <div style="background-color: black; height: 400px; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                    <img src="{% static noticia.imagem %}" alt="{{ noticia.subtitulo }}" style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                </div>
+            </a>
+            <div style="height: 100px; width: 100%; background-color: gray; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-top: 10px; padding: 15px; color: black;">
+                <a href="{% url 'noticia' noticia.id %}" style="text-decoration: none; display: block; height: 100%; width: 100%; color: black;">
+                    <h1 style="font-size: 35px; margin: 0; font-family: Inter; font-weight: 700; text-align: left; bottom: 20px; margin-left: 0;">{{ noticia.titulo }}</h1>
+                    <p style="font-size: 20px; margin: 0; font-family: Inter; font-weight: 700; text-align: left;">{{ noticia.subtitulo }}</p>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+{% endblock content %}
+
+         
 
