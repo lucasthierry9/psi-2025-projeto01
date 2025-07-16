@@ -31,14 +31,32 @@ elenco_vasco = [
         {"id": 28,"nome": "David", "idade": "29 anos", "numero": 7, "posicao": "Atacante", "localnascimento": "São Paulo, Brasil.", "altura": "1,75 m", "gols": 7, "assist": 4, "imagem": "website/img/fotos_elenco/7.png"},
         {"id": 29,"nome": "Adson", "idade": "24 anos", "numero": 28, "posicao": "Atacante", "localnascimento": "São Paulo, Brasil.", "altura": "1,75 m", "gols": 4, "assist": 1, "imagem": "website/img/fotos_elenco/28.png"},
         {"id": 30,"nome": "Rayan", "idade": "18 anos", "numero": 77, "posicao": "Atacante", "localnascimento": "Rio de Janeiro, Brasil.", "altura": "1,75 m", "gols": 9, "assist": 2, "imagem": "website/img/fotos_elenco/77.png"},
-        {"id": 31,"nome": "Vegetti", "idade": "36 anos", "numero": 99, "posicao": "Atacante", "localnascimento": "São Paulo, Argentina.", "altura": "1,75 m", "gols": 52, "assist": 7, "imagem": "website/img/fotos_elenco/99.png"},
+        {"id": 31,"nome": "Vegetti", "idade": "36 anos", "numero": 99, "posicao": "Atacante", "localnascimento": "São Paulo, Argentina.", "altura": "1,87 m", "gols": 52, "assist": 7, "imagem": "website/img/fotos_elenco/99.png"},
     ]
 
 noticias_vasco = [
-    {"id": 1, "titulo": "REFORÇO!", "subtitulo": "Vasco acerta a contratação do volante Thiago Mendes.", "data": "14/07/2025", "imagem": "website/img/WhatsApp-Image-2025-07-09-at-13.01.00-1320x550.jpeg",
+    {"id": 1, "titulo": "REFORÇO!", "subtitulo": "Vasco acerta a contratação do volante Thiago Mendes", "data": "14 de junho de 2025", "categoria": "Contratações", "imagem": "website/img/WhatsApp-Image-2025-07-09-at-13.01.00-1320x550.jpeg",
      "texto": "O Vasco da Gama acertou a contratação do seu nono reforço para 2025: o volante Thiago Mendes, de 33 anos. O jogador desembarcou no Rio de Janeiro na noite da última terça-feira (8), realizou exames médicos, foi aprovado e assinou contrato com o Gigante da Colina até dezembro de 2027.\n"
+     "\n"
      "– Eu queria voltar ao futebol brasileiro para sentir a energia do torcedor. O treinador falou muito bem do projeto e isso foi fundamental para vestir a camisa do Vasco. Estou ansioso para estrear, a torcida do Vasco inflama. Espero dar alegria ao torcedor – disse Thiago Mendes em entrevista exclusiva à Vasco TV.\n"
+     "\n"
      "Natural de São Luís, no Maranhão, Thiago Mendes iniciou a carreira no Goiás. Em 2015, foi contratado pelo São Paulo, onde teve grande destaque e foi vendido ao Lille (FRA). Da lá, seguiu no futebol francês, onde também defendeu o Lyon (FRA). Nas duas últimas temporadas, defendeu a camisa do Al-Rayyan (QAT)."},
+]
+
+sobre_site = [
+    {"titulo": "Sobre este Site", 
+     "conteudo": "Este site foi criado para reunir tudo sobre o Vasco da Gama em um só lugar: notícias atualizadas, informações sobre o elenco, jogos, estatísticas e muito mais, e adquirir prática e conhecimento sobre o desenvolvimento de sites utilizando ferramentas como o framework Django."},
+
+    {"titulo": "Sobre o Autor", 
+     "conteudo": "Desenvolvedor: Lucas Thierry Araújo Vicente\n"
+     "Email: lucasthierry092@gmail.com"},
+
+    {"titulo": "Créditos", 
+     "conteudo": "Todas as imagens, dados estatísticos e demais recursos visuais utilizados são de domínio público ou retirados da internet, sendo utilizados com fim exclusivamente educacional. Os direitos autorais pertencem aos seus respectivos criadores e detentores."},
+
+     {"titulo": "Contato", 
+     "conteudo": "Email: contato@vascodagama.com\n"
+     "Redes Socias: @vascodagama"},
 ]
 
 def inicio(request):
@@ -60,4 +78,7 @@ def noticia(request, id_noticia):
     return render(request, "website/noticias.html", noticias_vasco[id_noticia-1])
 
 def sobre(request):
-    return render(request, "website/sobre.html")
+    context = {
+        "sobre_site": sobre_site,
+    }
+    return render(request, "website/sobre.html", context)

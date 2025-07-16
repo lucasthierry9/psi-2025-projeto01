@@ -3,11 +3,12 @@
 {% block title %}{{ nome }}{% endblock %}]
 {% block content %}
 <section class="container py-5">
+    <h1 style="font-size: 30px; font-family: Inter; color: black; font-weight: 700; margin-left: 30%;">Ficha do Atleta</h1>
     <div style="display: flex;">
-        <div style="display: inline-block; width: 305px; height: 344px; background-color: gray; border-radius: 10px; position: relative; overflow: hidden; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);">
+        <div style="display: inline-block; width: 305px; height: 344px; background-color: gray; border-radius: 10px; position: relative; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <img src="{% static imagem %}" alt="{{ nome }}" style="width: 100%; height: 100%;">
         </div>
-        <div style="display: inline-block; color: black; margin-left: 30px;">
+        <div style="background-color: white; width: 71%; display: inline-block; color: black; margin-left: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 30px; border-radius: 15px;">
             <h2 style="font-family: Inter; font-weight: 700">{{ numero }} - {{ nome }}</h2>
             <p style="margin: 0"><strong>Idade:</strong> {{ idade }}</p>
             <p style="margin: 0"><strong>Posição:</strong> {{ posicao }}</p>
