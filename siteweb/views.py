@@ -28,10 +28,10 @@ elenco_vasco = [
         {"id": 25,"nome": "Garré", "idade": "24 anos", "numero": 15, "posicao": "Atacante", "localnascimento": "Buenos Aires, Argentina.", "altura": "1,72 m", "gols": 0, "assist": 1, "imagem": "website/img/fotos_elenco/15.png"},
         {"id": 26,"nome": "Loide Augusto", "idade": "25 anos", "numero": 45, "posicao": "Atacante", "localnascimento": "Luanda, Angola.", "altura": "1,83 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/45.png"},
         {"id": 27,"nome": "Jean David", "idade": "32 anos", "numero": 21, "posicao": "Atacante", "localnascimento": "Quillota, Chile.", "altura": "1,63 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/21.png"},
-        {"id": 28,"nome": "David", "idade": "29 anos", "numero": 7, "posicao": "Atacante", "localnascimento": "São Paulo, Brasil.", "altura": "1,75 m", "gols": 7, "assist": 4, "imagem": "website/img/fotos_elenco/7.png"},
-        {"id": 29,"nome": "Adson", "idade": "24 anos", "numero": 28, "posicao": "Atacante", "localnascimento": "São Paulo, Brasil.", "altura": "1,75 m", "gols": 4, "assist": 1, "imagem": "website/img/fotos_elenco/28.png"},
-        {"id": 30,"nome": "Rayan", "idade": "18 anos", "numero": 77, "posicao": "Atacante", "localnascimento": "Rio de Janeiro, Brasil.", "altura": "1,75 m", "gols": 9, "assist": 2, "imagem": "website/img/fotos_elenco/77.png"},
-        {"id": 31,"nome": "Vegetti", "idade": "36 anos", "numero": 99, "posicao": "Atacante", "localnascimento": "São Paulo, Argentina.", "altura": "1,87 m", "gols": 52, "assist": 7, "imagem": "website/img/fotos_elenco/99.png"},
+        {"id": 28,"nome": "David", "idade": "29 anos", "numero": 7, "posicao": "Atacante", "localnascimento": "Vitória, ES.", "altura": "1,79 m", "gols": 7, "assist": 4, "imagem": "website/img/fotos_elenco/7.png"},
+        {"id": 29,"nome": "Adson", "idade": "24 anos", "numero": 28, "posicao": "Atacante", "localnascimento": "Aruanã, GO.", "altura": "1,71 m", "gols": 4, "assist": 1, "imagem": "website/img/fotos_elenco/28.png"},
+        {"id": 30,"nome": "Rayan", "idade": "18 anos", "numero": 77, "posicao": "Atacante", "localnascimento": "Rio de Janeiro, RJ.", "altura": "1,85 m", "gols": 9, "assist": 2, "imagem": "website/img/fotos_elenco/77.png"},
+        {"id": 31,"nome": "Vegetti", "idade": "36 anos", "numero": 99, "posicao": "Atacante", "localnascimento": "Santo Domingo, Argentina.", "altura": "1,87 m", "gols": 52, "assist": 7, "imagem": "website/img/fotos_elenco/99.png"},
     ]
 
 noticias_vasco = [
@@ -59,9 +59,33 @@ sobre_site = [
      "Redes Socias: @vascodagama"},
 ]
 
+jogos  = [
+    {"campeonato": "Campeonato Brasileiro", "rodada": "Rodada 15", "estadio": "São Januário", "dataehora": "19 de jul - 17:30", "imagemcasa": "website/img/CRVascodaGama.png", "imagemfora": "website/img/gremio-logo-escudo-2.png"},
+    {"campeonato": "Copa Sul-Americana", "rodada": "Playoffs", "estadio": "São Januário", "dataehora": "22 de jul - 21:30", "imagemcasa": "website/img/CRVascodaGama.png", "imagemfora": "website/img/independiente-del-valle-logo.png"},
+    {"campeonato": "Copa do Brasil", "rodada": "Oitavas de final", "estadio": "Estádio Rei Pelé", "dataehora": "30 de jul - 19:00", "imagemcasa": "website/img/csa-logo-escudo.png", "imagemfora": "website/img/CRVascodaGama.png"},
+]
+
+informacoes = [
+    {"titulo": "NOSSA HISTÓRIA", 
+    "p1": "O Vasco foi fundado como um clube de remo em 1898, por um grupo de 63 rapazes, imigrantes portugueses e luso-descendentes, reunidos no bairro da Saúde. O nome escolhido foi Club de Regatas Vasco da Gama, pois naquele ano eram comemorados os 400 anos da viagem do almirante homônimo à Índia. Já filiado à União de Regatas, sua estreia em competições oficiais ocorreu na enseada de Botafogo, a 4 de junho de 1899. Ali, a baleeira ""Volúvel"", de seis remos, venceu o primeiro páreo na categoria júnior, a primeira vitória do Vasco no remo.",
+    "imagem": "website/img/77887785-893d-47ab-a058-7c643eea03ce.webp"},
+
+    {"titulo": "CAMISAS NEGRAS", 
+    "p1": "Na década de 1920, o Club de Regatas Vasco da Gama escreveu um dos capítulos mais gloriosos e pioneiros da luta contra o racismo no futebol brasileiro. Comumente chamados de ""Camisas Negras"", o time do Vasco conquistou o Campeonato Carioca de 1923 com uma equipe composta majoritariamente por jogadores negros e operários, algo inédito e revolucionário para a época, desafiando abertamente as elites que dominavam o esporte e promoviam a segregação.",
+    "imagem": "website/img/2DE6VQGZW7DPLBQVDJNK2YEQGY-1-1024x612.jpg"},
+
+    {"titulo": "RESPOSTA HISTÓRICA", 
+    "p1": "A reação da aristocracia do futebol carioca foi tentar excluir o Vasco da liga em 1924, exigindo a desfiliação de 12 de seus atletas, sob o pretexto de ""amadorismo"" e ""incapacidade"", um eufemismo claro para racismo. A resposta do Vasco veio através da ""Resposta Histórica"" de 1924, um documento assinado pelo então presidente do clube, José Augusto Prestes. Nela, o Vasco recusou-se a aceitar a exclusão de seus jogadores, afirmando que não abriria mão de nenhum atleta, pois era ""o clube de todos"" e não se submeteria a um ""injusto e odioso ato de discriminação"". Essa postura firme garantiu a permanência dos atletas e marcou o Vasco como um símbolo da inclusão e da resistência, consolidando um legado de luta contra o preconceito que perdura até hoje.",
+    "imagem": "website/img/resposta-historica.webp"},
+
+]
+
+
 def inicio(request):
      context = {
         "noticias_vasco": noticias_vasco,
+        "informacoes": informacoes,
+        "jogos": jogos,
     }
      return render(request, "website/inicio.html", context)
 
