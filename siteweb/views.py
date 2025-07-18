@@ -15,23 +15,24 @@ elenco_vasco = [
         {"id": 12,"nome": "João Victor", "idade": "30 anos", "numero": 38, "posicao": "Zagueiro", "localnascimento": "Bauru, SP.", "altura": "1,87 m", "gols": 3, "assist": 2, "imagem": "website/img/fotos_elenco/38.png"},
         {"id": 13,"nome": "Luiz Gustavo", "idade": "19 anos", "numero": 44, "posicao": "Zagueiro", "localnascimento": "Itaboraí, RJ.", "altura": "1,88 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/44.png"},
         {"id": 14,"nome": "Mauricio Lemos", "idade": "29 anos", "numero": 4, "posicao": "Zagueiro", "localnascimento": "Rivera, Uruguai.", "altura": "1,87 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/4.png"},
-        {"id": 15,"nome": "Tchê Tchê", "idade": "32 anos", "numero": 3, "posicao": "Volante", "localnascimento": "São Paulo, SP.", "altura": "1,75 m", "gols": 0, "assist": 4, "imagem": "website/img/fotos_elenco/3.png"},
-        {"id": 16,"nome": "Juan Sforza", "idade": "23 anos", "numero": 20,"posicao": "Volante", "localnascimento": "Rosario, Argentina.", "altura": "1,79 m", "gols": 1, "assist": 1, "imagem": "website/img/fotos_elenco/20.png"},
-        {"id": 17,"nome": "Jair", "idade": "30 anos", "numero": 8, "posicao": "Volante", "localnascimento": "Ibirubá, RS.", "altura": "1,78 m", "gols": 5, "assist": 0, "imagem": "website/img/fotos_elenco/8.png"},
-        {"id": 18,"nome": "Paulinho", "idade": "28 anos", "numero": 18, "posicao": "Volante", "localnascimento": "Rio de Janeiro, RJ.", "altura": "1,73 m", "gols": 2, "assist": 3, "imagem": "website/img/fotos_elenco/18.png"},
-        {"id": 19,"nome": "Hugo Moura", "idade": "27 anos", "numero": 25, "posicao": "Volante", "localnascimento": "São Paulo, Brasil.", "altura": "1,75 m", "gols": 3, "assist": 7, "imagem": "website/img/fotos_elenco/85.png"},
-        {"id": 20,"nome": "Mateus Carvalho", "idade": "23 anos", "numero": 85, "posicao": "Volante", "localnascimento": "Tucuruí, PA.", "altura": "1,84 m", "gols": 2, "assist": 2, "imagem": "website/img/fotos_elenco/25.png"},
-        {"id": 21,"nome": "Coutinho", "idade": "33 anos", "numero": 10, "posicao": "Meia", "localnascimento": "Rio de Janeiro, RJ.", "altura": "1,72 m", "gols": 13, "assist": 14, "imagem": "website/img/fotos_elenco/10.png"},
-        {"id": 22,"nome": "Estrella", "idade": "20 anos", "numero": 14, "posicao": "Meia", "localnascimento": "São Paulo, Brasil.", "altura": "1,76 m", "gols": 1, "assist": 0, "imagem": "website/img/fotos_elenco/14.png"},
-        {"id": 23,"nome": "Alex Teixeira", "idade": "35 anos", "numero": 90, "posicao": "Meia", "localnascimento": "Duque de Caxias, RJ.", "altura": "1,74 m", "gols": 21, "assist": 8, "imagem": "website/img/fotos_elenco/90.png"},
-        {"id": 24,"nome": "Nuno Moreira", "idade": "26 anos", "numero": 17, "posicao": "Atacante", "localnascimento": "Espinho, Portugal.", "altura": "1,75 m", "gols": 5, "assist": 2, "imagem": "website/img/fotos_elenco/17.png"},
-        {"id": 25,"nome": "Garré", "idade": "24 anos", "numero": 15, "posicao": "Atacante", "localnascimento": "Buenos Aires, Argentina.", "altura": "1,72 m", "gols": 0, "assist": 1, "imagem": "website/img/fotos_elenco/15.png"},
-        {"id": 26,"nome": "Loide Augusto", "idade": "25 anos", "numero": 45, "posicao": "Atacante", "localnascimento": "Luanda, Angola.", "altura": "1,83 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/45.png"},
-        {"id": 27,"nome": "Jean David", "idade": "32 anos", "numero": 21, "posicao": "Atacante", "localnascimento": "Quillota, Chile.", "altura": "1,63 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/21.png"},
-        {"id": 28,"nome": "David", "idade": "29 anos", "numero": 7, "posicao": "Atacante", "localnascimento": "Vitória, ES.", "altura": "1,79 m", "gols": 7, "assist": 4, "imagem": "website/img/fotos_elenco/7.png"},
-        {"id": 29,"nome": "Adson", "idade": "24 anos", "numero": 28, "posicao": "Atacante", "localnascimento": "Aruanã, GO.", "altura": "1,71 m", "gols": 4, "assist": 1, "imagem": "website/img/fotos_elenco/28.png"},
-        {"id": 30,"nome": "Rayan", "idade": "18 anos", "numero": 77, "posicao": "Atacante", "localnascimento": "Rio de Janeiro, RJ.", "altura": "1,85 m", "gols": 9, "assist": 2, "imagem": "website/img/fotos_elenco/77.png"},
-        {"id": 31,"nome": "Vegetti", "idade": "36 anos", "numero": 99, "posicao": "Atacante", "localnascimento": "Santo Domingo, Argentina.", "altura": "1,87 m", "gols": 52, "assist": 7, "imagem": "website/img/fotos_elenco/99.png"},
+        {"id": 15,"nome": "Thiago Mendes", "idade": "33 anos", "numero": 23, "posicao": "Volante", "localnascimento": "São Luís, MA.", "altura": "1,77 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/Thiago-Mendes.png"},
+        {"id": 16,"nome": "Tchê Tchê", "idade": "32 anos", "numero": 3, "posicao": "Volante", "localnascimento": "São Paulo, SP.", "altura": "1,75 m", "gols": 0, "assist": 4, "imagem": "website/img/fotos_elenco/3.png"},
+        {"id": 17,"nome": "Juan Sforza", "idade": "23 anos", "numero": 20,"posicao": "Volante", "localnascimento": "Rosario, Argentina.", "altura": "1,79 m", "gols": 1, "assist": 1, "imagem": "website/img/fotos_elenco/20.png"},
+        {"id": 18,"nome": "Jair", "idade": "30 anos", "numero": 8, "posicao": "Volante", "localnascimento": "Ibirubá, RS.", "altura": "1,78 m", "gols": 5, "assist": 0, "imagem": "website/img/fotos_elenco/8.png"},
+        {"id": 19,"nome": "Paulinho", "idade": "28 anos", "numero": 18, "posicao": "Volante", "localnascimento": "Rio de Janeiro, RJ.", "altura": "1,73 m", "gols": 2, "assist": 3, "imagem": "website/img/fotos_elenco/18.png"},
+        {"id": 20,"nome": "Hugo Moura", "idade": "27 anos", "numero": 25, "posicao": "Volante", "localnascimento": "São Paulo, Brasil.", "altura": "1,75 m", "gols": 3, "assist": 7, "imagem": "website/img/fotos_elenco/85.png"},
+        {"id": 21,"nome": "Mateus Carvalho", "idade": "23 anos", "numero": 85, "posicao": "Volante", "localnascimento": "Tucuruí, PA.", "altura": "1,84 m", "gols": 2, "assist": 2, "imagem": "website/img/fotos_elenco/25.png"},
+        {"id": 22,"nome": "Coutinho", "idade": "33 anos", "numero": 10, "posicao": "Meia", "localnascimento": "Rio de Janeiro, RJ.", "altura": "1,72 m", "gols": 13, "assist": 14, "imagem": "website/img/fotos_elenco/10.png"},
+        {"id": 23,"nome": "Estrella", "idade": "20 anos", "numero": 14, "posicao": "Meia", "localnascimento": "São Paulo, Brasil.", "altura": "1,76 m", "gols": 1, "assist": 0, "imagem": "website/img/fotos_elenco/14.png"},
+        {"id": 24,"nome": "Alex Teixeira", "idade": "35 anos", "numero": 90, "posicao": "Meia", "localnascimento": "Duque de Caxias, RJ.", "altura": "1,74 m", "gols": 21, "assist": 8, "imagem": "website/img/fotos_elenco/90.png"},
+        {"id": 25,"nome": "Nuno Moreira", "idade": "26 anos", "numero": 17, "posicao": "Atacante", "localnascimento": "Espinho, Portugal.", "altura": "1,75 m", "gols": 5, "assist": 2, "imagem": "website/img/fotos_elenco/17.png"},
+        {"id": 26,"nome": "Garré", "idade": "24 anos", "numero": 15, "posicao": "Atacante", "localnascimento": "Buenos Aires, Argentina.", "altura": "1,72 m", "gols": 0, "assist": 1, "imagem": "website/img/fotos_elenco/15.png"},
+        {"id": 27,"nome": "Loide Augusto", "idade": "25 anos", "numero": 45, "posicao": "Atacante", "localnascimento": "Luanda, Angola.", "altura": "1,83 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/45.png"},
+        {"id": 28,"nome": "Jean David", "idade": "32 anos", "numero": 21, "posicao": "Atacante", "localnascimento": "Quillota, Chile.", "altura": "1,63 m", "gols": 0, "assist": 0, "imagem": "website/img/fotos_elenco/21.png"},
+        {"id": 29,"nome": "David", "idade": "29 anos", "numero": 7, "posicao": "Atacante", "localnascimento": "Vitória, ES.", "altura": "1,79 m", "gols": 7, "assist": 4, "imagem": "website/img/fotos_elenco/7.png"},
+        {"id": 30,"nome": "Adson", "idade": "24 anos", "numero": 28, "posicao": "Atacante", "localnascimento": "Aruanã, GO.", "altura": "1,71 m", "gols": 4, "assist": 1, "imagem": "website/img/fotos_elenco/28.png"},
+        {"id": 31,"nome": "Rayan", "idade": "18 anos", "numero": 77, "posicao": "Atacante", "localnascimento": "Rio de Janeiro, RJ.", "altura": "1,85 m", "gols": 9, "assist": 2, "imagem": "website/img/fotos_elenco/77.png"},
+        {"id": 32,"nome": "Vegetti", "idade": "36 anos", "numero": 99, "posicao": "Atacante", "localnascimento": "Santo Domingo, Argentina.", "altura": "1,87 m", "gols": 52, "assist": 7, "imagem": "website/img/fotos_elenco/99.png"},
     ]
 
 noticias_vasco = [
@@ -81,13 +82,13 @@ informacoes = [
 ]
 
 
-def inicio(request):
+def index(request):
      context = {
         "noticias_vasco": noticias_vasco,
         "informacoes": informacoes,
         "jogos": jogos,
     }
-     return render(request, "website/inicio.html", context)
+     return render(request, "website/index.html", context)
 
 def elenco(request):
     context = {
