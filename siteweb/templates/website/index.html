@@ -17,20 +17,11 @@
                 </a>
             </div>
         </div>
-            <div style="margin: 0;">
-                <div style="background-color: black; width: 100%; border-top-left-radius: 15px; border-top-right-radius: 15px; overflow: hidden;">
-                    <img src="{{ noticias_vasco.imagem.url }}" alt="{{ noticias_vasco.subtitulo }}" style="width: 100%; height: auto; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                </div>
-                <div style="width: 100%; background-color: white; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; margin-top: 0px; padding: 15px; color: black; box-shadow: 0 2px 4px rgba(0,0,0,0.1); box-sizing: border-box;">
-                    <h1 style="font-size: 35px; margin: 0; font-family: Inter; font-weight: 700; text-align: left;">{{ noticias_vasco.titulo }}</h1>
-                    <p style="font-size: 20px; margin: 0; font-family: Inter; font-weight: 700; text-align: left;">{{ noticias_vasco.subtitulo }}</p>
-                </div>
-            </div>
             {% else %}
             <div class="alert alert-info text-center" role="alert">
-                Nenhuma tarefa cadastrada. Acesse o <a href="/admin/" class="alert-link">admin</a> para adicionar.
+                Nenhuma notícia cadastrada. Acesse o <a href="/admin/" class="alert-link">admin</a> para adicionar.
             </div>
-        {% endif %}
+            {% endif %}
         <h1 class="py-4" style="font-size: 45px; font-family: Inter, serif; color: black; font-weight: 700; text-align: center; margin: 0;">PRÓXIMOS JOGOS</h1>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 33px; margin: 0 auto; max-width: 1200px;">
             {% for jogo in jogos|slice:":3" %}
